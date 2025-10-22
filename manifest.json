@@ -26,6 +26,7 @@
     "logos": [
         "https://raw.githubusercontent.com/lvgl/project-creator/master/meta/images/renesas/logo.svg"
     ],
+    "image": "https://raw.githubusercontent.com/lvgl/lv_port_renesas_ek-ra8d2/master/board_images/renesas-EK-RA8D2.webp",
     "buy_now_links": [
         "https://www.renesas.com/en/design-resources/boards-kits/ek-ra8d2"
     ],
