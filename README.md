@@ -17,7 +17,7 @@ You can purchase a Renesas EK-RA8D2 from https://www.renesas.com/en/design-resou
     <img src="https://github.com/user-attachments/assets/87c1f2e5-0260-4772-b711-13fdab467474" width="75%">
 </a> -->
 
-Here is the benchmark for D/AVE 2D with double-buffered direct GLCDC.
+Here is the benchmark result for D/AVE 2D with double-buffered direct GLCDC.
 
 | Name                      | Avg. CPU | Avg. FPS | Avg. time | render time | flush time |
 | :------------------------ | -------: | -------: | --------: | ----------: | ---------: |
@@ -96,7 +96,7 @@ Here is the benchmark for D/AVE 2D with double-buffered direct GLCDC.
 ### Run the project
 - Clone the repository
   ```shell
-  git clone https://github.com/lvgl/lv_port_renesas_ek_ra8d2.git
+  git clone https://github.com/lvgl/lv_port_renesas_ek-ra8d2.git
   ```
 - Open e2 studio and go to **File > Open Projects from File System...**. Click "Directory"
   and navigate to the cloned project and then click "Finish".
