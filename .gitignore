@@ -1,0 +1,73 @@
+/Debug
+/Release
+/ra_gen
+/ra_cfg
+ra/*
+!ra/fsp
+ra/fsp/*
+!ra/fsp/src
+ra/fsp/src/*
+!ra/fsp/src/r_drw
+ra/fsp/src/r_drw/*
+!ra/fsp/src/r_dtc
+ra/fsp/src/r_dtc/*
+!ra/fsp/src/r_drw/r_drw_memory.c
+!ra/fsp/src/r_dtc/r_dtc.c
+src/lvgl/*
+
+/JLinkLog.log
+/build/
+/.cache
+
+# Prerequisites
+*.d
+
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Linker output
+*.ilk
+*.map
+*.exp
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
