@@ -21,23 +21,23 @@ Here is the benchmark result for D/AVE 2D with double-buffered direct GLCDC.
 
 | Name                      | Avg. CPU | Avg. FPS | Avg. time | render time | flush time |
 | :------------------------ | -------: | -------: | --------: | ----------: | ---------: |
-| Empty screen              | 17%      | 29       | 21        | 14          | 7          |
-| Moving wallpaper          | 24%      | 25       | 37        | 33          | 4          |
-| Single rectangle          | 4%       | 29       | 8         | 1           | 7          |
-| Multiple rectangles       | 11%      | 30       | 14        | 7           | 7          |
-| Multiple RGB images       | 23%      | 29       | 15        | 7           | 8          |
-| Multiple ARGB images      | 23%      | 30       | 16        | 9           | 7          |
-| Rotated ARGB images       | 10%      | 30       | 13        | 5           | 8          |
-| Multiple labels           | 72%      | 21       | 40        | 32          | 8          |
-| Screen sized text         | 74%      | 8        | 117       | 111         | 6          |
-| Multiple arcs             | 34%      | 29       | 28        | 17          | 11         |
-| Containers                | 49%      | 29       | 20        | 11          | 9          |
-| Containers with overlay   | 50%      | 14       | 54        | 45          | 9          |
-| Containers with opa       | 52%      | 28       | 22        | 14          | 8          |
-| Containers with opa_layer | 87%      | 9        | 95        | 84          | 11         |
-| Containers with scrolling | 69%      | 14       | 66        | 57          | 9          |
-| Widgets demo              | 66%      | 14       | 52        | 44          | 8          |
-| All scenes avg.           | 41%      | 23       | 37        | 30          | 7          |
+| Empty screen              | 13%      | 57       | 14        | 6           | 8          |
+| Moving wallpaper          | 11%      | 29       | 32        | 19          | 13         |
+| Single rectangle          | 4%       | 58       | 14        | 0           | 14         |
+| Multiple rectangles       | 10%      | 58       | 14        | 3           | 11         |
+| Multiple RGB images       | 30%      | 58       | 11        | 3           | 8          |
+| Multiple ARGB images      | 31%      | 58       | 10        | 3           | 7          |
+| Rotated ARGB images       | 20%      | 58       | 11        | 2           | 9          |
+| Multiple labels           | 45%      | 58       | 14        | 9           | 5          |
+| Screen sized text         | 42%      | 21       | 43        | 33          | 10         |
+| Multiple arcs             | 21%      | 58       | 14        | 8           | 6          |
+| Containers                | 28%      | 58       | 10        | 3           | 7          |
+| Containers with overlay   | 28%      | 29       | 33        | 28          | 5          |
+| Containers with opa       | 27%      | 58       | 10        | 3           | 7          |
+| Containers with opa_layer | 65%      | 41       | 20        | 14          | 6          |
+| Containers with scrolling | 46%      | 28       | 32        | 25          | 7          |
+| Widgets demo              | 35%      | 29       | 30        | 20          | 10         |
+| All scenes avg.           | 28%      | 47       | 19        | 11          | 8          |
 
 ## Specification
 

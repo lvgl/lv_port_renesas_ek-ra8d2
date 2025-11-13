@@ -20,6 +20,8 @@
     #define LV_LOG_PRINTF 1
 #endif
 
+#define LV_DEF_REFR_PERIOD  16
+
 #define LV_USE_ASSERT_NULL          0
 #define LV_USE_ASSERT_MALLOC        0
 #define LV_USE_ASSERT_STYLE         0
