@@ -11,11 +11,13 @@ The included display is 7" and has a resolution of 1024x600.
 
 You can purchase a Renesas EK-RA8D2 from https://www.renesas.com/en/design-resources/boards-kits/ek-ra8d2
 
-## Benchmark
+## Video
 
-<!-- <a href="https://www.youtube.com/watch?v=XXXXXXXXXXXXXXXXXXXXXXX">
-    <img src="https://github.com/user-attachments/assets/87c1f2e5-0260-4772-b711-13fdab467474" width="75%">
-</a> -->
+<a href="https://www.youtube.com/watch?v=a8eLdqC7rZk">
+    <img src="https://github.com/user-attachments/assets/c8315541-02f0-43c9-be4d-3a93221e8448" width="75%">
+</a>
+
+## Benchmark
 
 Here is the benchmark result for D/AVE 2D with double-buffered direct GLCDC.
 
