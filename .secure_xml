@@ -61,10 +61,10 @@
     <node id="board.clock.pll1r.div" option="board.clock.pll1r.div.5"/>
     <node id="board.clock.pll1r.display" option="board.clock.pll1r.display.value"/>
     <node id="board.clock.pll2.source" option="board.clock.pll2.source.xtal"/>
-    <node id="board.clock.pll2.div" option="board.clock.pll2.div.1"/>
-    <node id="board.clock.pll2.mul" option="board.clock.pll2.mul.51_33"/>
+    <node id="board.clock.pll2.div" option="board.clock.pll2.div.3"/>
+    <node id="board.clock.pll2.mul" option="board.clock.pll2.mul.133_00"/>
     <node id="board.clock.pll2.display" option="board.clock.pll2.display.value"/>
-    <node id="board.clock.pll2p.div" option="board.clock.pll2p.div.2"/>
+    <node id="board.clock.pll2p.div" option="board.clock.pll2p.div.4"/>
     <node id="board.clock.pll2p.display" option="board.clock.pll2p.display.value"/>
     <node id="board.clock.pll2q.div" option="board.clock.pll2q.div.2"/>
     <node id="board.clock.pll2q.display" option="board.clock.pll2q.display.value"/>
@@ -130,8 +130,8 @@
     <node id="board.clock.u60ck.source" option="board.clock.u60ck.source.disabled"/>
     <node id="board.clock.u60ck.div" option="board.clock.u60ck.div.5"/>
     <node id="board.clock.u60ck.display" option="board.clock.u60ck.display.value"/>
-    <node id="board.clock.octaspiclk.source" option="board.clock.octaspiclk.source.disabled"/>
-    <node id="board.clock.octaspiclk.div" option="board.clock.octaspiclk.div.4"/>
+    <node id="board.clock.octaspiclk.source" option="board.clock.octaspiclk.source.pll2p"/>
+    <node id="board.clock.octaspiclk.div" option="board.clock.octaspiclk.div.3"/>
     <node id="board.clock.octaspiclk.display" option="board.clock.octaspiclk.display.value"/>
     <node id="board.clock.octaspiclk.om_sclk.display" option="board.clock.octaspiclk.om_sclk.display.value"/>
     <node id="board.clock.adcclk.source" option="board.clock.adcclk.source.disabled"/>
@@ -184,6 +184,19 @@
       <configSetting altId="jtag_fslash_swd.tdi.p208" configurationId="jtag_fslash_swd.tdi" peripheral="JTAG/SWD"/>
       <configSetting altId="jtag_fslash_swd.tdo.p209" configurationId="jtag_fslash_swd.tdo" peripheral="JTAG/SWD"/>
       <configSetting altId="jtag_fslash_swd.tms.p210" configurationId="jtag_fslash_swd.tms" peripheral="JTAG/SWD"/>
+      <configSetting altId="ospi0.om_0_cs1.p104" configurationId="ospi0.om_0_cs1" peripheral="OSPI0"/>
+      <configSetting altId="ospi0.om_0_dqs.p801" configurationId="ospi0.om_0_dqs" peripheral="OSPI0"/>
+      <configSetting altId="ospi0.om_0_ecsint1.p105" configurationId="ospi0.om_0_ecsint1" peripheral="OSPI0"/>
+      <configSetting altId="ospi0.om_0_reset.p106" configurationId="ospi0.om_0_reset" peripheral="OSPI0"/>
+      <configSetting altId="ospi0.om_0_sclk.p808" configurationId="ospi0.om_0_sclk" peripheral="OSPI0"/>
+      <configSetting altId="ospi0.om_0_sio0.p100" configurationId="ospi0.om_0_sio0" peripheral="OSPI0"/>
+      <configSetting altId="ospi0.om_0_sio1.p803" configurationId="ospi0.om_0_sio1" peripheral="OSPI0"/>
+      <configSetting altId="ospi0.om_0_sio2.p103" configurationId="ospi0.om_0_sio2" peripheral="OSPI0"/>
+      <configSetting altId="ospi0.om_0_sio3.p101" configurationId="ospi0.om_0_sio3" peripheral="OSPI0"/>
+      <configSetting altId="ospi0.om_0_sio4.p102" configurationId="ospi0.om_0_sio4" peripheral="OSPI0"/>
+      <configSetting altId="ospi0.om_0_sio5.p800" configurationId="ospi0.om_0_sio5" peripheral="OSPI0"/>
+      <configSetting altId="ospi0.om_0_sio6.p802" configurationId="ospi0.om_0_sio6" peripheral="OSPI0"/>
+      <configSetting altId="ospi0.om_0_sio7.p804" configurationId="ospi0.om_0_sio7" peripheral="OSPI0"/>
       <configSetting altId="p514.output.low" configurationId="p514"/>
       <configSetting altId="p606.output.high" configurationId="p606"/>
       <configSetting altId="sci8.cts8.pd05" configurationId="sci8.cts8" isUsedByDriver="true" peripheral="SCI8"/>
