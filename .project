@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>EK_RA8D2_FreeRTOS_LVGL</name>
+	<name>lv_port_renesas_ek-ra8d2</name>
 	<comment></comment>
 	<projects>
 	</projects>
