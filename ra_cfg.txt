@@ -1200,6 +1200,7 @@ FSP Configuration
   User Event Links
     
   Linker Section Mappings
+    *(.bss.lv_mem_init.work_mem_int): SDRAM Zeroed
     *(.bss.g_heap): RAM Uninitialized
     *(.bss.g_main_stack): RAM Uninitialized
     
@@ -1236,7 +1237,7 @@ FSP Configuration
   Module "LVGL"
     General: Custom lv_conf.h: lv_conf_user.h
     LVGL: Display: LV_COLOR_DEPTH: 16
-    LVGL: Memory: LV_MEM_SIZE: 0x40000
+    LVGL: Memory: LV_MEM_SIZE: 0x160000
     LVGL: Memory: LV_DRAW_LAYER_SIMPLE_BUF_SIZE: 0x6000
     LVGL: Memory: LV_DRAW_LAYER_MAX_MEMORY: 0
     LVGL: Memory: LV_DRAW_THREAD_STACK_SIZE: 0x2000
@@ -1466,6 +1467,7 @@ FSP Configuration
       Extra: RS-485: DE Pin Polarity: Active High
       Extra: RS-485: DE Pin Assertion Time: 1
       Extra: RS-485: DE Pin Negation Time: 1
+      Extra: TXI/TEI Synchronization Delay Cycles: 0
       Interrupts: Callback: uart_callback
       Interrupts: Receive Interrupt Priority: Priority 12
       Interrupts: Transmit Data Empty Interrupt Priority: Priority 12

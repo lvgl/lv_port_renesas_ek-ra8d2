@@ -15,6 +15,16 @@ static void __putc(char c)
 {
     fsp_err_t err;
 
+    static bool call_uart_open = true;
+
+    if (true == call_uart_open)
+    {
+        err = R_SCI_B_UART_Open(&g_uart0_ctrl, &g_uart0_cfg);
+        assert(FSP_SUCCESS == err);
+
+        call_uart_open = false;
+    }
+
     err = R_SCI_B_UART_Write(&g_uart0_ctrl, (uint8_t *)&c, 1);
     assert(FSP_SUCCESS == err);
 

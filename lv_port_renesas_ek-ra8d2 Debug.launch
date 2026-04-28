@@ -27,7 +27,7 @@
     <stringAttribute key="com.renesas.cdt.core.targetDevice" value="R7KA8D2KF_CPU0"/>
     <booleanAttribute key="com.renesas.cdt.core.useRemoteTarget" value="true"/>
     <booleanAttribute key="com.renesas.cdt.core.verboseMode" value="false"/>
-    <stringAttribute key="com.renesas.cdt.debug.ioview.dsf.registerSelection0" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;selectedRegisterList ioFilePath=&quot;C:\Users\a5094302\.eclipse\com.renesas.platform_158886867\DebugComp\RA\IoFiles\R7KA8D2AD.svd&quot;/&gt;&#13;&#10;"/>
+    <stringAttribute key="com.renesas.cdt.debug.ioview.dsf.registerSelection0" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;selectedRegisterList ioFilePath=&quot;C:\Users\a5094302\.eclipse\com.renesas.platform_1955838226\DebugComp\RA\IoFiles\R7KA8D2AD.svd&quot;/&gt;&#13;&#10;"/>
     <stringAttribute key="com.renesas.cdt.launch.dsf.IO_MAP" value="${support_area_loc}"/>
     <booleanAttribute key="com.renesas.cdt.launch.dsf.USE_DEFAULT_IO_MAP" value="true"/>
     <listAttribute key="com.renesas.cdt.launch.dsf.downloadImages">
@@ -114,7 +114,7 @@
     <booleanAttribute key="com.renesas.hardwaredebug.arm.jlink.connection.resetAfterDownload" value="false"/>
     <booleanAttribute key="com.renesas.hardwaredebug.arm.jlink.connection.resetBeginConnection" value="true"/>
     <booleanAttribute key="com.renesas.hardwaredebug.arm.jlink.connection.resetCon" value="false"/>
-    <booleanAttribute key="com.renesas.hardwaredebug.arm.jlink.connection.resetPreRun" value="false"/>
+    <booleanAttribute key="com.renesas.hardwaredebug.arm.jlink.connection.resetPreRun" value="true"/>
     <booleanAttribute key="com.renesas.hardwaredebug.arm.jlink.connection.setArMModeAfterDownload" value="false"/>
     <stringAttribute key="com.renesas.hardwaredebug.arm.jlink.connection.swv.coreClockSpeed" value="0"/>
     <booleanAttribute key="com.renesas.hardwaredebug.arm.jlink.connection.wakeupallcores" value="false"/>

@@ -9,10 +9,6 @@
 void new_thread0_entry(void *pvParameters)
 {
     FSP_PARAMETER_NOT_USED (pvParameters);
-    fsp_err_t err;
-
-    err = R_SCI_B_UART_Open(&g_uart0_ctrl, &g_uart0_cfg);
-    assert(FSP_SUCCESS == err);
 
     lv_init();
 

@@ -22,7 +22,7 @@
 #endif
 
 #define LV_USE_ASSERT_NULL          0
-#define LV_USE_ASSERT_MALLOC        0
+#define LV_USE_ASSERT_MALLOC        1
 #define LV_USE_ASSERT_STYLE         0
 #define LV_USE_ASSERT_MEM_INTEGRITY 0
 #define LV_USE_ASSERT_OBJ           0
