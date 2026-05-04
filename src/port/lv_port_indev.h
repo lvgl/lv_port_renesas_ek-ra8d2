@@ -26,6 +26,8 @@ extern "C" {
 /*********************
  *      DEFINES
  *********************/
+#define INDEV_EVENT_DRIVEN 0
+
 
 /**********************
  *      TYPEDEFS

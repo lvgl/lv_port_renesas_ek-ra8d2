@@ -70,25 +70,25 @@ Here is the benchmark result for D/AVE 2D with double-buffered direct GLCDC.
 - Connect a USB C cable to DEBUG1 (J10) and your PC.
 
 ### Software setup
-- [Install e2 studio 2025-10.0 or newer (important) for your OS](https://www.renesas.com/en/software-tool/e2studio-information-rz-family).
+- [Install e2 studio 2025-12 or newer (important) for your OS](https://www.renesas.com/en/software-tool/e2studio-information-rz-family).
   On Linux, Ubuntu 24.04 or newer is required.
   - When prompted, choose "Custom Install".
   - Ensure "RA" is included in your selection of "Device Families" to install.
   - Ensure "Renesas FSP Smart Configurator Core" and "Renesas FSP Smart Configurator ARM"
     are included in your selection of "Customize Features".
-  - Ensure "LLVM Embedded Toolchain for Arm 18.1.3" is selected.
-- Install FSP Packs. v6.2.0 is required.
-  - On Windows, simply download FSP_Packs_v6.2.0.exe
-    [from here](https://github.com/renesas/fsp/releases/tag/v6.2.0) under "Assets".
+  - Ensure "LLVM Embedded Toolchain for Arm 21.1.1" is selected.
+- Install FSP Packs. v6.4.0 is required.
+  - On Windows, simply download FSP_Packs_v6.4.0.exe
+    [from here](https://github.com/renesas/fsp/releases/tag/v6.4.0) under "Assets".
     Run the installer and follow the prompts.
-  - On Linux, download FSP_Packs_v6.2.0.zip
-    [from here](https://github.com/renesas/fsp/releases/tag/v6.2.0) under "Assets".
+  - On Linux, download FSP_Packs_v6.4.0.zip
+    [from here](https://github.com/renesas/fsp/releases/tag/v6.4.0) under "Assets".
     Locate the e2 studio install location. If it is `~/.local/share/renesas/e2_studio`
-    and the ZIP download is `~/Downloads/FSP_Packs_v6.2.0.zip`, unzip the file
+    and the ZIP download is `~/Downloads/FSP_Packs_v6.4.0.zip`, unzip the file
     with the following commands:
     ```shell
     cd ~/.local/share/renesas/e2_studio
-    unzip ~/Downloads/FSP_Packs_v6.2.0.zip
+    unzip ~/Downloads/FSP_Packs_v6.4.0.zip
     ```
     The directory structure in the ZIP overlaps with the
     e2_studio install location. This is expected. The `unzip` process will

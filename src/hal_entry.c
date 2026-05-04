@@ -1,4 +1,5 @@
 #include "hal_data.h"
+#include "ospi_b_ep.h"
 
 FSP_CPP_HEADER
 void R_BSP_WarmStart(bsp_warm_start_event_t event);
@@ -72,6 +73,30 @@ void R_BSP_WarmStart(bsp_warm_start_event_t event)
         /* Setup SDRAM and initialize it. Must configure pins first. */
         R_BSP_SdramInit(true);
 #endif
+
+        uint32_t            flash_id = 0;
+        fsp_err_t err;
+
+        /* Initialize OSPI driver module and Flash device in SPI mode */
+        err = ospi_b_init();
+        if (FSP_SUCCESS != err)
+        {
+            assert(0);
+        }
+
+        /* Read Flash device ID */
+        err = ospi_b_read_device_id(&flash_id);
+        if (FSP_SUCCESS != err)
+        {
+            assert(0);
+        }
+
+        /* Set OSPI to OPI mode */
+        err = ospi_b_set_protocol_to_opi();
+        if (FSP_SUCCESS != err)
+        {
+            assert(0);
+        }
     }
 }
 

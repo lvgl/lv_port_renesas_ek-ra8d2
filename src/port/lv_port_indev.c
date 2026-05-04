@@ -105,6 +105,11 @@ void lv_port_indev_init(void)
     lv_indev_set_type(indev_touchpad, LV_INDEV_TYPE_POINTER);
     lv_indev_set_read_cb(indev_touchpad, touchpad_read);
 
+#if (1 == INDEV_EVENT_DRIVEN)
+    /* Update the input device's running mode to LV_INDEV_MODE_EVENT */
+    lv_indev_set_mode(indev_touchpad, LV_INDEV_MODE_EVENT);
+#endif
+
 
     /* Open the I2C bus if it is not already open. */
     rm_comms_i2c_bus_extended_cfg_t * p_extend          = (rm_comms_i2c_bus_extended_cfg_t *) g_comms_i2c_device0_cfg.p_extend;
@@ -244,10 +249,26 @@ void touchpad_read(lv_indev_t * indev_drv, lv_indev_data_t * data)
 
     data->state = LV_INDEV_STATE_RELEASED;
 
+#if (1 == INDEV_EVENT_DRIVEN)
+    touchpad_get_xy(data);
+#else
     /*Save the pressed coordinates and the state*/
+    static lv_indev_state_t last_state = LV_INDEV_STATE_RELEASED;
+    static lv_point_t last_point = {.x = 0, .y = 0};
+
     if(touchpad_is_pressed()) {
         touchpad_get_xy(data);
+        last_state = data->state;
+        last_point.x = data->point.x;
+        last_point.y = data->point.y;
     }
+    else
+    {
+        data->state   = last_state;
+        data->point.x = last_point.x;
+        data->point.y = last_point.y;
+    }
+#endif
 
 }
 

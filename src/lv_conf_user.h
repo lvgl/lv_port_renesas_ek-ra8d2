@@ -15,15 +15,14 @@
     #define LV_USE_PERF_MONITOR 1
 #endif
 
-#define LV_USE_LOG 1
+#define LV_USE_LOG 0
 #if LV_USE_LOG
+    #define LV_LOG_LEVEL LV_LOG_LEVEL_ERROR
     #define LV_LOG_PRINTF 1
 #endif
 
-#define LV_DEF_REFR_PERIOD  16
-
 #define LV_USE_ASSERT_NULL          0
-#define LV_USE_ASSERT_MALLOC        0
+#define LV_USE_ASSERT_MALLOC        1
 #define LV_USE_ASSERT_STYLE         0
 #define LV_USE_ASSERT_MEM_INTEGRITY 0
 #define LV_USE_ASSERT_OBJ           0
