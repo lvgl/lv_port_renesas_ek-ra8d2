@@ -1,6 +1,9 @@
 /Debug
 /Release
 /ra_gen
+# Generated FSP configuration report. Not refreshed by Generate Project Content,
+# so a tracked copy only goes stale.
+/ra_cfg.txt
 /ra_cfg
 ra/*
 
