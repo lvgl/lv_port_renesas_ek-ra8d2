@@ -171,7 +171,7 @@
     <intAttribute key="org.eclipse.cdt.debug.gdbjtag.core.delay" value="0"/>
     <booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.doHalt" value="false"/>
     <booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.doReset" value="false"/>
-    <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.imageFileName" value="C:\Renesas\GIT\lv_port_renesas_ek-ra8d2\Debug\lv_port_renesas_ek-ra8d2.elf"/>
+    <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.imageFileName" value="C:\Renesas\GIT\lv_port_renesas_ek-ra8d2\Debug\ra8d2-fsp-direct-double-external-1024x600.elf"/>
     <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.imageOffset" value="0"/>
     <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.initCommands" value=""/>
     <booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.loadImage" value="true"/>
@@ -182,7 +182,7 @@
     <booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.setResume" value="false"/>
     <booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.setStopAt" value="true"/>
     <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.stopAt" value="main"/>
-    <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.symbolsFileName" value="C:\Renesas\GIT\lv_port_renesas_ek-ra8d2\Debug\lv_port_renesas_ek-ra8d2.elf"/>
+    <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.symbolsFileName" value="C:\Renesas\GIT\lv_port_renesas_ek-ra8d2\Debug\ra8d2-fsp-direct-double-external-1024x600.elf"/>
     <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.symbolsOffset" value="0"/>
     <booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.useFileForImage" value="false"/>
     <booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.useFileForSymbols" value="false"/>
@@ -195,7 +195,7 @@
     <stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_START_MODE" value="remote"/>
     <booleanAttribute key="org.eclipse.cdt.launch.DEBUGGER_STOP_AT_MAIN" value="true"/>
     <stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_STOP_AT_MAIN_SYMBOL" value="main"/>
-    <stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="Debug\lv_port_renesas_ek-ra8d2.elf"/>
+    <stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="Debug\ra8d2-fsp-direct-double-external-1024x600.elf"/>
     <stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="lv_port_renesas_ek-ra8d2"/>
     <booleanAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_AUTO_ATTR" value="true"/>
     <stringAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_ID_ATTR" value="com.renesas.cdt.managedbuild.llvm.arm.configuration.debug.975447341"/>

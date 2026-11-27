@@ -104,11 +104,13 @@ Here is the benchmark result for D/AVE 2D with double-buffered direct GLCDC.
   and navigate to the cloned project and then click "Finish".
 - Click the hammer to build the project. If it is greyed-out, first single-click the project
   in the left sidebar and the hammer should become clickable.
+  The output is `Debug/ra8d2-fsp-direct-double-external-1024x600.elf` (and `.srec`): FSP display
+  driver, direct render mode, two framebuffers in external RAM, 1024x600.
 - To upload and run the project, click the bug (debug) icon. The debugger will break (stop execution)
   at the beginning. Click the "Resume" button to continue execution.
 - To upload the optimized Release version of the build, open the dropdown next to the bug
-  icon and click "Debug Configurations...". Change the "C/C++ Application:" to start with
-  "Release/" instead of "Debug/". It's also recommended to set the "Build Configuration:"
+  icon and click "Debug Configurations...". Change the "C/C++ Application:" to
+  `Release/ra8d2-fsp-direct-double-external-1024x600.elf`. It's also recommended to set the "Build Configuration:"
   to "Release". Remember to change these settings back if you want a good experience debugging
   the app.
 
