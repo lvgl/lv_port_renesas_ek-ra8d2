@@ -19,27 +19,52 @@ You can purchase a Renesas EK-RA8D2 from https://www.renesas.com/en/design-resou
 
 ## Benchmark
 
-Here is the benchmark result for D/AVE 2D with double-buffered direct GLCDC.
+Benchmark results for D/AVE 2D with double-buffered direct GLCDC.
+
+By default LVGL refreshes the display every 33 ms, so the frame rate is capped at about 30 FPS:
 
 | Name                      | Avg. CPU | Avg. FPS | Avg. time | render time | flush time |
 | :------------------------ | -------: | -------: | --------: | ----------: | ---------: |
-| Empty screen              | 13%      | 57       | 14        | 6           | 8          |
-| Moving wallpaper          | 11%      | 29       | 32        | 19          | 13         |
+| Empty screen              | 7%       | 29       | 14        | 7           | 7          |
+| Moving wallpaper          | 11%      | 29       | 33        | 20          | 13         |
+| Single rectangle          | 3%       | 29       | 7         | 0           | 7          |
+| Multiple rectangles       | 5%       | 29       | 11        | 4           | 7          |
+| Multiple RGB images       | 10%      | 30       | 13        | 5           | 8          |
+| Multiple ARGB images      | 10%      | 29       | 14        | 6           | 8          |
+| Rotated ARGB images       | 5%       | 29       | 12        | 4           | 8          |
+| Multiple labels           | 26%      | 29       | 19        | 12          | 7          |
+| Screen sized text         | 37%      | 19       | 49        | 34          | 15         |
+| Multiple arcs             | 10%      | 29       | 15        | 8           | 7          |
+| Containers                | 25%      | 29       | 12        | 5           | 7          |
+| Containers with overlay   | 28%      | 28       | 32        | 29          | 3          |
+| Containers with opa       | 26%      | 29       | 13        | 6           | 7          |
+| Containers with opa_layer | 67%      | 24       | 32        | 26          | 6          |
+| Containers with scrolling | 46%      | 29       | 31        | 27          | 4          |
+| Widgets demo              | 38%      | 28       | 28        | 22          | 6          |
+| All scenes avg.           | 22%      | 28       | 20        | 13          | 7          |
+
+The display runs at 60 Hz. Adding `#define LV_DEF_REFR_PERIOD 16` to `src/lv_conf_user.h`
+raises the cap to about 60 FPS, at the cost of higher CPU usage:
+
+| Name                      | Avg. CPU | Avg. FPS | Avg. time | render time | flush time |
+| :------------------------ | -------: | -------: | --------: | ----------: | ---------: |
+| Empty screen              | 13%      | 57       | 15        | 7           | 8          |
+| Moving wallpaper          | 10%      | 29       | 33        | 20          | 13         |
 | Single rectangle          | 4%       | 58       | 14        | 0           | 14         |
-| Multiple rectangles       | 10%      | 58       | 14        | 3           | 11         |
-| Multiple RGB images       | 30%      | 58       | 11        | 3           | 8          |
-| Multiple ARGB images      | 31%      | 58       | 10        | 3           | 7          |
+| Multiple rectangles       | 10%      | 58       | 15        | 4           | 11         |
+| Multiple RGB images       | 31%      | 57       | 10        | 3           | 7          |
+| Multiple ARGB images      | 31%      | 57       | 11        | 4           | 7          |
 | Rotated ARGB images       | 20%      | 58       | 11        | 2           | 9          |
-| Multiple labels           | 45%      | 58       | 14        | 9           | 5          |
-| Screen sized text         | 42%      | 21       | 43        | 33          | 10         |
-| Multiple arcs             | 21%      | 58       | 14        | 8           | 6          |
-| Containers                | 28%      | 58       | 10        | 3           | 7          |
-| Containers with overlay   | 28%      | 29       | 33        | 28          | 5          |
-| Containers with opa       | 27%      | 58       | 10        | 3           | 7          |
-| Containers with opa_layer | 65%      | 41       | 20        | 14          | 6          |
-| Containers with scrolling | 46%      | 28       | 32        | 25          | 7          |
-| Widgets demo              | 35%      | 29       | 30        | 20          | 10         |
-| All scenes avg.           | 28%      | 47       | 19        | 11          | 8          |
+| Multiple labels           | 50%      | 57       | 14        | 12          | 2          |
+| Screen sized text         | 37%      | 19       | 49        | 34          | 15         |
+| Multiple arcs             | 23%      | 58       | 13        | 8           | 5          |
+| Containers                | 29%      | 58       | 11        | 4           | 7          |
+| Containers with overlay   | 28%      | 29       | 32        | 29          | 3          |
+| Containers with opa       | 28%      | 58       | 11        | 4           | 7          |
+| Containers with opa_layer | 68%      | 28       | 30        | 23          | 7          |
+| Containers with scrolling | 46%      | 28       | 31        | 27          | 4          |
+| Widgets demo              | 38%      | 28       | 28        | 22          | 6          |
+| All scenes avg.           | 29%      | 46       | 19        | 12          | 7          |
 
 ## Specification
 
